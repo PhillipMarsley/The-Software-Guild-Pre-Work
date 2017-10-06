@@ -3,7 +3,7 @@
 
 <head>
     <title>Home</title>
-    <link rel='stylesheet' href='website.css'>
+    <link rel='stylesheet' href='restaurantStyles.css'>
 
     <style>
         #image {
@@ -15,11 +15,7 @@
             image-rendering: optimizeQuality;
         }
 
-        img {
-            width: 100%;
-            height: 120%;
-            border: 1px solid black;
-        }
+        /*inline style of the img in the image div is located on line 40*/
 
         #description {
             width: 370px;
@@ -41,7 +37,7 @@
         <a href='contact.html'>Contact Us</a>
     </div>
     <div id='image'>
-        <img src='images/hobbit-dennys-still.jpg' />
+        <img style='width:100%; height:120%; border:1px solid black;' src='images/hobbit-dennys-still.jpg' />
     </div>
     <div id='description'>
         Chef Owner Merlin the Gray has going on over one-hundred adventures spanning seven different realms and worked under five
