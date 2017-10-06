@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel='stylesheet' href='website.css'>
+
+    <style>
+        form {
+            margin: 2em 0;
+        }
+        #formSection {
+            padding: .5em;
+            display: block;
+        }
+
+        #leftHalf {
+            width: 40%;
+            padding-right: 1em;
+            display: inline-block;
+            vertical-align: top;
+            text-align: right;
+            font-weight: bold;
+            font-size: 110%;
+        }
+
+        #rightHalf {
+            width: 15em;
+            display: inline-block;
+        }
+
+        #name, #email, #phone, #reason, #textArea {
+            width: 16.5em;
+            border: 2px solid black;
+        }
+
+        #submit {
+            padding: 0 1em;
+            border: 2px solid black;
+            margin-right: 1.5em;
+            float: right;
+        }
+
+        #reason, #submit {
+            border-radius: .1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='title'>
+        <h1>The Wizard's Castle</h1>
+    </div>
+    <div id='navigation'>
+        <a href='index.html'>Home</a>
+        <a href='menu.html'>Menu</a>
+        <a href='contact.html'>Contact Us</a>
+    </div>
+    <form action='#' method='POST'>
+        <div id='formSection'>
+            <div id='leftHalf'>
+                <label id='nameLabel' for='name'>Name: </label>
+            </div>
+            <div id='rightHalf'>
+                <input id='name' name='name' type='text' />
+            </div>
+        </div>
+        <div id='formSection'>
+            <div id='leftHalf'>
+                <label id='emailLabel' for='email'>Email: </label>
+            </div>
+            <div id='rightHalf'>
+                <input id='email' name='email' type='text' />
+            </div>
+        </div>
+        <div id='formSection'>
+            <div id='leftHalf'>
+                <label id='phoneLabel' for='phone'>Phone: </label>
+            </div>
+            <div id='rightHalf'>
+                <input id='phone' name='phone' type='phone' />
+            </div>
+        </div>
+        <div id='formSection'>
+            <div id='leftHalf'>
+                <label id='reasonLabel' for='reason'>Reason for Inquiry: </label>
+            </div>
+            <div id='rightHalf'>
+                <select id='reason' name='reason'>
+                    <option value='0' selected='selected'>Catering</option>
+                    <option value='1'>Private Party</option>
+                    <option value='2'>Feedback</option>
+                    <option value='3'>Other</option>
+                </select>
+            </div>
+        </div>
+        <div id='formSection'>
+            <div id='leftHalf'>
+                <label id='textAreaLabel' for='textArea'>Additional Information: </label>
+            </div>
+            <div id='rightHalf'>
+                <textarea rows='6' id='textArea' name='textArea'></textarea>
+            </div>
+        </div>
+        <div id='formSection'>
+            <div id='leftHalf'>
+                <label id='radioLabel' for='raido'>Have you been to the Resturant? </label>
+            </div>
+            <div id='rightHalf'>
+                <input id='raido' name='raido' value='no' type='radio' checked/> No
+                <input id='raido' name='raido' value='yes' type='radio' /> Yes
+            </div>
+        </div>
+        <div id='formSection'>
+            <div id='leftHalf'>
+                <label id='daysLabel' for='daysCheckbox'>Best days to contact you: </label>
+            </div>
+            <div id='rightHalf'>
+                <input id='daysCheckbox' name='monday' type='checkbox' /> M
+                <input id='daysCheckbox' name='tuesday' type='checkbox' /> T
+                <input id='daysCheckbox' name='Wednesday' type='checkbox' /> W
+                <input id='daysCheckbox' name='Thursday' type='checkbox' /> Th
+                <input id='daysCheckbox' name='Friday' type='checkbox' /> F
+            </div>
+        </div>
+        <div id='formSection'>
+            <div id='leftHalf'></div>
+            <div id='rightHalf'>
+                <input id='submit' name='submit' type='submit' value='Send Request' />
+            </div>
+        </div>
+    </form>
+    <footer>
+        1122 Magic blv Se, Saffron, Minnesota, 102938
+        <br />
+        <br /> 1-800-123-4567
+    </footer>
+</body>
+
+</html>
