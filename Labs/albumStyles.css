@@ -1,12 +1,22 @@
-#centeredDiv {
-    display: block;
-    width: 100%;
-    margin: 0, auto;
-    text-align: center;
+#imageDiv {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(http://www.nuclearblast.de/static/articles/190/190721.jpg/1000x1000.jpg);
+    background-size: 400px;
+    background-position: center;
+}
+
+.font {
+    font-family: Brush Script MT;
 }
 
 h1, h2, h3, h4 {
     text-align: center;
+}
+
+li {
+    font-style: italic;
 }
 
 table {
