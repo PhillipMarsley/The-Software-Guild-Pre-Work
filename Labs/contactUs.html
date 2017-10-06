@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel='stylesheet' href='contactUs.css'>
+</head>
+
+<body>
+    <div id='leftHalf'>
+        <div id='text'>
+                <label id='' for=''>: </label>
+        </div>
+        <div id='text'>
+                <label id='' for=''>: </label>
+        </div>
+        <div id='text'>
+                <label id='' for=''>: </label>
+        </div>
+        <div id='radio'>
+                
+        </div>
+        <div id='dropdown'>
+
+        </div>
+        <div id='textarea'>
+
+        </div>
+        <div id='checkbox'>
+
+        </div>
+        <div id=''>
+                
+        </div>
+    </div>
+    <div id='rightHalf'>
+
+    </div>
+    <div id='leftHalf'>
+        First Name:
+        <br />
+        <br /> Last Name:
+        <br />
+        <br /> Email:
+        <br />
+        <br /> Type of License:
+        <br />
+        <br /> Reason:
+        <br />
+        <br /> Additional Information:
+        <br />
+    </div>
+    <div id='rightHalf'>
+        <form action='#' method='POST'>
+                <input id='firstName' name='firstName' type='text' />
+                <br />
+                <br />  <input id='lastName' name='lastName' type='text' />
+                <br />
+                <br />  <input id='email' name='email' type='text' />
+                <br />
+                <br />  <input id='licenseType' name='licenseType' value='business' type='radio' checked/> Business
+                        <input id='licenseType' name='licenseType' value='personal' type='radio' /> Personal
+                <br />
+                <br />  <select id='reason' name='reason'>
+                            <option value='softwareSupport'>Software Support</option>
+                            <option value='hardwareSupport'>Hardware Support</option>
+                            <option value='informationRequest'>Information Request</option>
+                        </select>
+                <br />
+                <br />  <textarea id='additionalInformation' name='additionalInformation'></textarea>
+                <br />
+                <br />  <input id='teamsOfService' name='termsOfService' type='checkbox' /> I have read the terms of service.
+                <br />
+                <br />  <input id='submit' name='submit' type='submit' value='Send Request'/>
+        </form>
+    </div>
+</body>
+
+</html>
