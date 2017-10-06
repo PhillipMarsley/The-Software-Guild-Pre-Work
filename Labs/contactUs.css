@@ -1,26 +1,36 @@
-body {
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid green;
+#text, #radio, #dropdown, #textarea, #checkbox, #submitButton{
+    display: block;
+    padding: .5em;
 }
 
-#text {
+#leftHalf {
     display: inline-block;
-    float: left;
-    border: 1px solid blue;
-    text-align: right;
+    width: 22%;
     padding-right: 1em;
+    text-align: right;
 }
 
-#forms {
+#rightHalf {
     display: inline-block;
-    border: 1px solid red;
+    width: 15em;
 }
 
 #firstName, #lastName, #email, #reason, #additionalInformation {
-    width: 100%;
+    width: 16.5em;
+    border: 2px solid black;
+}
+
+#additionalInformation {
+    vertical-align: text-top;
 }
 
 #submit {
+    margin-right: 1.5em;
+    padding: 0 1em;
+    border: 2px solid black;
     float: right;
+}
+
+#reason, #submit {
+    border-radius: .3em;
 }
