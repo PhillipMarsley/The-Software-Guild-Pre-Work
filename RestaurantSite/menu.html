@@ -6,13 +6,24 @@
     <link rel='stylesheet' href='restaurantStyles.css'>
 
     <style>
-        #menuDiv {
+        #menuBody {
+            padding-bottom: 10em;
+            background-color: rgb(250, 236, 211);
+        }
+
+        /*
+            TODO: If given the chance though the tutorials: 
+            1. make the background white-castle brick
+            2. make the menu items on wooden signs hanging on the brick
+        */
+
+        .menuDiv {
             width: 98%;
             margin: 0 auto;
             display: block;
         }
 
-        #menuItem {
+        .menuItem {
             width: 28%;
             height: auto;
             padding: 0 1em;
@@ -21,10 +32,6 @@
             display: inline-block;
             vertical-align: top;
             text-align: center;
-        }
-
-        footer { 
-            margin-top: 10em;
         }
     </style>
 </head>
@@ -38,59 +45,61 @@
         <a href='menu.html'>Menu</a>
         <a href='contact.html'>Contact Us</a>
     </div>
-    <div id='menuDiv'>
-        <div id='menuItem'>
-            <h3>Dragon Burger and Claws</h3>
-            An Adventure Classic!
-            <br /> Your choice - with or without cheese pickles, onions, tomato, lettuce, BBQ sauce
-            <br />Served with our dragon-claw shaped french fries
-            <br />Wash it down with our homebrewed fireball mead for $2.00 more
-            <br />$12.00
+    <div id='menuBody'>
+        <div class='menuDiv'>
+            <div class='menuItem'>
+                <h3>Dragon Burger and Claws</h3>
+                An Adventure Classic!
+                <br /> Your choice - with or without cheese pickles, onions, tomato, lettuce, BBQ sauce
+                <br />Served with our dragon-claw shaped french fries
+                <br />Wash it down with our homebrewed fireball mead for $2.00 more
+                <br />$12.00
+            </div>
+            <div class='menuItem'>
+                <h3>Wyvern Dog and Scales</h3>
+                A Tasty Treat!
+                <br />Your choice - white or wheat bun
+                <br /> Relish, mustard, and ketchup
+                <br />Served with our house-made wyvern-scale shapped chips
+                <br />Wash it down with our homebrewed fireball mead for $2.00 more
+                <br />$12.00
+            </div>
+            <div class='menuItem'>
+                <h3>Garden Salad</h3>
+                Refreshing!
+                <br /> A mix of Iceberg and Romaine Lettuce, Spinach, Brocolli, Carrots, Celery, Kale, and Cherry Tomatos straight
+                from our garden
+                <br />Comes with an additional mix of your choice of magic berries; strawberry, raspberry, blueberry, blackberry,
+                salmonberry, juniper, and saskatoon
+                <br />Servered with a freshly-baked bread roll
+                <br />$10.00
+            </div>
         </div>
-        <div id='menuItem'>
-            <h3>Wyvern Dog and Scales</h3>
-            A Tasty Treat!
-            <br />Your choice - white or wheat bun
-            <br /> Relish, mustard, and ketchup
-            <br />Served with our house-made wyvern-scale shapped chips
-            <br />Wash it down with our homebrewed fireball mead for $2.00 more
-            <br />$12.00
+        <div class='menuDiv'>
+            <div class='menuItem'>
+                <h3>Basket of Bread Staves</h3>
+                A whole staff of bread!
+                <br />Fresh baked daily with the aid of magic
+                <br />Comes with your choice of butter or honey
+                <br />Get meat dipping sauce for $1.00
+                <br />$6.00
+            </div>
+            <div class='menuItem'>
+                <h3>Wizard Hat Porridge</h3>
+                Eat Like a Wizard!
+                <br />Your choice - Apple Cinnimon, Blueberry, or Plain Oatmeal or Malt'o'Meal served in a bowl that looks like
+                a wizard's hat
+                <br /> Comes with our magic colour changing orange juice, milk, or coffee
+                <br /> $8.00
+            </div>
+            <div class='menuItem'>
+                <h3>Spellbook Pie</h3>
+                Delecious Pages in Every Bite!
+                <br /> Your choice - Redberry, Meat, Fish, Wild, or Summer pie.
+                <br /> Comes with our Steam Dragon Wizard Tea.
+                <br /> $9.00
+            </div>
         </div>
-        <div id='menuItem'>
-            <h3>Garden Salad</h3>
-            Refreshing!
-            <br /> A mix of Iceberg and Romaine Lettuce, Spinach, Brocolli, Carrots, Celery, Kale, and Cherry Tomatos straight
-            from our garden
-            <br />Comes with an additional mix of your choice of magic berries; strawberry, raspberry, blueberry, blackberry, salmonberry,
-            juniper, and saskatoon
-            <br />Servered with a freshly-baked bread roll
-            <br />$10.00
-        </div>
-    </div>
-    <div id='menuDiv'></div>
-    <div id='menuItem'>
-        <h3>Basket of Bread Staves</h3>
-        A whole staff of bread!
-        <br />Fresh baked daily with the aid of magic
-        <br />Comes with your choice of butter or honey
-        <br />Get meat dipping sauce for $1.00
-        <br />$6.00
-    </div>
-    <div id='menuItem'>
-        <h3>Wizard Hat Porridge</h3>
-        Eat Like a Wizard!
-        <br />Your choice - Apple Cinnimon, Blueberry, or Plain Oatmeal or Malt'o'Meal served in a bowl that looks like a wizard's
-        hat
-        <br /> Comes with our magic colour changing orange juice, milk, or coffee
-        <br /> $8.00
-    </div>
-    <div id='menuItem'>
-        <h3>Spellbook Pie</h3>
-        Delecious Pages in Every Bite!
-        <br /> Your choice - Redberry, Meat, Fish, Wild, or Summer pie.
-        <br /> Comes with our Steam Dragon Wizard Tea.
-        <br /> $9.00
-    </div>
     </div>
     <footer>
         1122 Magic blv Se, Saffron, Minnesota, 102938

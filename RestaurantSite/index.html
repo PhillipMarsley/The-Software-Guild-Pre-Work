@@ -9,20 +9,25 @@
         #image {
             width: 400px;
             height: 150px;
-            padding: 1em;
             margin: 0 auto;
             overflow: hidden;
             image-rendering: optimizeQuality;
         }
 
-        /*inline style of the img in the image div is located on line 40*/
+        #contentDiv {
+            padding: 1em 0;
+            background-color: rgb(250, 236, 211);
+        }
+
+        /*inline style of the img in the image div is located on line 46*/
 
         #description {
             width: 370px;
             padding: 1em;
             padding-bottom: 5em;
             border: 1px solid black;
-            margin: 1em auto;
+            margin: 0 auto;
+            margin-top: 1em;
         }
     </style>
 </head>
@@ -36,15 +41,17 @@
         <a href='menu.html'>Menu</a>
         <a href='contact.html'>Contact Us</a>
     </div>
-    <div id='image'>
-        <img style='width:100%; height:120%; border:1px solid black;' src='images/hobbit-dennys-still.jpg' />
-    </div>
-    <div id='description'>
-        Chef Owner Merlin the Gray has going on over one-hundred adventures spanning seven different realms and worked under five
-        different Master Wizard Chefs and master over three-hundred different cooking related magic spells to bring you the best dishes
-        in your world. The Wizard's Castle specializes in simple homemade dishes that are sure to fufill any wizard's appitite.
-        While the supplies may be exoctic, produced with magic, or grown right in our own garden, the flavors are sure to
-        remind you of home.
+    <div id='contentDiv'>
+        <div id='image'>
+            <img style='width:100%; height:120%; border:1px solid black;' src='images/hobbit-dennys-still.jpg' />
+        </div>
+        <div id='description'>
+            Chef Owner Merlin the Gray has going on over one-hundred adventures spanning seven different realms and worked under five
+            different Master Wizard Chefs and master over three-hundred different cooking related magic spells to bring you
+            the best dishes in your world. The Wizard's Castle specializes in simple homemade dishes that are sure to fufill
+            any wizard's appitite. While the supplies may be exoctic, produced with magic, or grown right in our own garden,
+            the flavors are sure to remind you of home.
+        </div>
     </div>
     <footer>
         1122 Magic blv Se, Saffron, Minnesota, 102938
