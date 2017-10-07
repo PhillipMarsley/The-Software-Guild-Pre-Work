@@ -22,15 +22,19 @@ li {
 table {
     width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 
 th {
     background-color: lightgray;
 }
 
-table,
-th,
-td {
+table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+td {
+    font-style: italic;
+    background-color: rgb(243, 243, 233);
 }
