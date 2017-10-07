@@ -12,6 +12,19 @@
 
 #navigation a {
     padding: 1em;
+    font-weight: normal;
+}
+
+#navigation a:visited {
+    color: rgb(26, 40, 100);
+}
+
+#navigation a:hover {
+    font-weight: bold;
+}
+
+#navigation a:active {
+    text-decoration: unset;
 }
 
 footer {
