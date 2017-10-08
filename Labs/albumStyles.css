@@ -1,40 +1,43 @@
-#imageDiv {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    background-image: url(http://www.nuclearblast.de/static/articles/190/190721.jpg/1000x1000.jpg);
-    background-size: 400px;
-    background-position: center;
+body {
+    margin: 1em;
+}
+
+.albumImgDiv {
+    max-width: 450px;
+}
+
+a:hover {
+    background-color: rgb(180, 180, 178);
+}
+
+h1, h2, h3, h4, table, caption, th {
+    text-align: center;
+}
+
+li, td {
+    font-style: italic;
+}
+
+caption {
+    font-size: 150%;
 }
 
 .font {
     font-family: Brush Script MT;
 }
 
-h1, h2, h3, h4 {
-    text-align: center;
-}
-
-li {
-    font-style: italic;
-}
-
-table {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+hr {
+    border: 1px solid black;
 }
 
 th {
     background-color: lightgray;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.table-striped {
+    background-color: rgb(243, 243, 233);
 }
 
-td {
-    font-style: italic;
-    background-color: rgb(243, 243, 233);
+.table, .table-bordered th, .table-bordered td {
+    border: .1em solid black !important;
 }
