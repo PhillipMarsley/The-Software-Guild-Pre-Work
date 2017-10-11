@@ -4,27 +4,19 @@
     font-family: Lucida Calligraphy;
 }
 
-#navigation {
-    padding: 1em;
-    border-top: 1px solid black;
+.nav {
     border-bottom: 1px solid black;
 }
 
-#navigation a {
-    padding: 1em;
-    font-weight: normal;
-}
-
-#navigation a:visited {
-    color: rgb(26, 40, 100);
-}
-
-#navigation a:hover {
+.nav-pills a:hover {
     font-weight: bold;
 }
 
-#navigation a:active {
-    text-decoration: unset;
+.jumbotron {
+    border-bottom: 1px solid black;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    text-align: center;
 }
 
 footer {

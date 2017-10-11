@@ -1,49 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang='en-US'>
 
 <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width = divice-wdith, initial-scale = 1'>
     <title>Contact Us</title>
+    <link rel='stylesheet' type='text/css' href='bootstrap-3.3.7-dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='restaurantStyles.css'>
 
     <style>
-        form {
-            margin: 2em 0;
+        .container-fluid {
+            padding: 2em;
         }
 
-        #formSection {
-            padding: .5em;
-            display: block;
+        .widthAdjust {
+            min-width: 10em;
+            width: 100%;
         }
 
-        #leftHalf {
-            width: 40%;
-            padding-right: 1em;
-            display: inline-block;
-            vertical-align: top;
+        .alignRight {
             text-align: right;
-            font-weight: bold;
-            font-size: 110%;
-        }
-
-        #rightHalf {
-            width: 15em;
-            display: inline-block;
-        }
-
-        #name, #email, #phone, #reason, #textArea {
-            width: 16.5em;
-            border: 2px solid black;
-        }
-
-        #submit {
-            padding: 0 1em;
-            border: 2px solid black;
-            margin-right: 1.5em;
-            float: right;
-        }
-
-        #reason, #submit {
-            border-radius: .1em;
         }
     </style>
 </head>
@@ -52,85 +28,120 @@
     <div id='title'>
         <h1>The Wizard's Castle</h1>
     </div>
-    <div id='navigation'>
-        <a href='index.html'>Home</a>
-        <a href='menu.html'>Menu</a>
-        <a href='contact.html'>Contact Us</a>
+    <div id='navContainer'>
+        <ul class='nav nav-pills'>
+            <li><a href='index.html'><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href='menu.html'>Menu</a></li>
+            <li class='active'><a href='contact.html'>Contact Us</a></li>
+        </ul>
+        <div class="jumbotron">
+            <h1>We're opening a new location!</h1>
+        </div>
     </div>
-    <form action='#' method='POST'>
-        <div id='formSection'>
-            <div id='leftHalf'>
-                <label id='nameLabel' for='name'>Name: </label>
+    <div class='container-fluid'>
+        <form action='#' method='POST' class='form-horizontal'>
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <label for='name'>Name: </label>
+                </div>
+                <div class='col-sm-3 col-xs-6'>
+                    <input class='widthAdjust' id='name' name='name' type='text' />
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-            <div id='rightHalf'>
-                <input id='name' name='name' type='text' />
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <label for='email'>Email: </label>
+                </div>
+                <div class='col-sm-3 col-xs-6'>
+                    <input class='widthAdjust' id='email' name='email' type='text' />
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-        </div>
-        <div id='formSection'>
-            <div id='leftHalf'>
-                <label id='emailLabel' for='email'>Email: </label>
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <label for='phone'>Phone: </label>
+                </div>
+                <div class='col-sm-3 col-xs-6'>
+                    <input class='widthAdjust' id='phone' name='phone' type='phone' />
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-            <div id='rightHalf'>
-                <input id='email' name='email' type='text' />
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <label for='reason'>Reason for Inquiry: </label>
+                </div>
+                <div class='col-sm-3 col-xs-6'>
+                    <select class='widthAdjust' id='reason' name='reason'>
+                        <option value='0' selected='selected'>Catering</option>
+                        <option value='1'>Private Party</option>
+                        <option value='2'>Feedback</option>
+                        <option value='3'>Other</option>
+                    </select>
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-        </div>
-        <div id='formSection'>
-            <div id='leftHalf'>
-                <label id='phoneLabel' for='phone'>Phone: </label>
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <label for='textArea'>Additional Information: </label>
+                </div>
+                <div class='col-sm-3 col-xs-6'>
+                    <textarea class='widthAdjust' rows='6' id='textArea' name='textArea'></textarea>
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-            <div id='rightHalf'>
-                <input id='phone' name='phone' type='phone' />
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <label for='raido'>Have you been to the Resturant? </label>
+                </div>
+                <div class='col-sm-3 col-xs-6'>
+                    <input id='raido' name='raido' value='no' type='radio' checked/> No
+                    <input id='raido' name='raido' value='yes' type='radio' /> Yes
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-        </div>
-        <div id='formSection'>
-            <div id='leftHalf'>
-                <label id='reasonLabel' for='reason'>Reason for Inquiry: </label>
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <label for='daysCheckbox'>Best days to contact you: </label>
+                </div>
+                <div class='col-sm-3 col-xs-6'>
+                    <div class='row'>
+                        <div class='col-xs-2'>
+                            <div class='checkbox-inline'><input id='daysCheckbox' name='monday' type='checkbox' /> M </div>
+                        </div>
+                        <div class='col-xs-2'>
+                            <div class='checkbox-inline'><input id='daysCheckbox' name='tuesday' type='checkbox' /> T </div>
+                        </div>
+                        <div class='col-xs-2'>
+                            <div class='checkbox-inline'><input id='daysCheckbox' name='Wednesday' type='checkbox' /> W </div>
+                        </div>
+                        <div class='col-xs-2'>
+                            <div class='checkbox-inline'><input id='daysCheckbox' name='Thursday' type='checkbox' /> Th </div>
+                        </div>
+                        <div class='col-xs-2'>
+                            <div class='checkbox-inline'><input id='daysCheckbox' name='Friday' type='checkbox' /> F </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-            <div id='rightHalf'>
-                <select id='reason' name='reason'>
-                    <option value='0' selected='selected'>Catering</option>
-                    <option value='1'>Private Party</option>
-                    <option value='2'>Feedback</option>
-                    <option value='3'>Other</option>
-                </select>
+            <div class='form-group'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3 col-xs-6'></div>
+                <div class='col-sm-3 col-xs-6 alignRight'>
+                    <input id='submit' name='submit' type='submit' value='Send Request' />
+                </div>
+                <div class='col-sm-3'></div>
             </div>
-        </div>
-        <div id='formSection'>
-            <div id='leftHalf'>
-                <label id='textAreaLabel' for='textArea'>Additional Information: </label>
-            </div>
-            <div id='rightHalf'>
-                <textarea rows='6' id='textArea' name='textArea'></textarea>
-            </div>
-        </div>
-        <div id='formSection'>
-            <div id='leftHalf'>
-                <label id='radioLabel' for='raido'>Have you been to the Resturant? </label>
-            </div>
-            <div id='rightHalf'>
-                <input id='raido' name='raido' value='no' type='radio' checked/> No
-                <input id='raido' name='raido' value='yes' type='radio' /> Yes
-            </div>
-        </div>
-        <div id='formSection'>
-            <div id='leftHalf'>
-                <label id='daysLabel' for='daysCheckbox'>Best days to contact you: </label>
-            </div>
-            <div id='rightHalf'>
-                <input id='daysCheckbox' name='monday' type='checkbox' /> M
-                <input id='daysCheckbox' name='tuesday' type='checkbox' /> T
-                <input id='daysCheckbox' name='Wednesday' type='checkbox' /> W
-                <input id='daysCheckbox' name='Thursday' type='checkbox' /> Th
-                <input id='daysCheckbox' name='Friday' type='checkbox' /> F
-            </div>
-        </div>
-        <div id='formSection'>
-            <div id='leftHalf'></div>
-            <div id='rightHalf'>
-                <input id='submit' name='submit' type='submit' value='Send Request' />
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
     <footer>
         1122 Magic blv Se, Saffron, Minnesota, 102938
         <br />

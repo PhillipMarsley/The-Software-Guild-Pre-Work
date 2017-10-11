@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang='en-US'>
 
 <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width = divice-wdith, initial-scale = 1'>
     <title>Menu</title>
+    <link rel='stylesheet' type='text/css' href='bootstrap-3.3.7-dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='restaurantStyles.css'>
 
     <style>
         #menuBody {
-            padding-bottom: 2em;
+            padding-bottom: 1em;
             background-color: rgb(250, 236, 211);
         }
-
-        /*
-            TODO: If given the chance though the tutorials: 
-            1. make the background white-castle brick
-            2. make the menu items on wooden signs hanging on the brick
-        */
 
         .menuDiv {
             width: 98%;
             margin: 0 auto;
-            display: block;
         }
 
         .menuItem {
-            width: 28%;
             height: auto;
-            padding: 0 1em;
-            margin: 0 auto;
-            margin: 0 1em;
-            display: inline-block;
-            vertical-align: top;
+            padding: 1em;
             text-align: center;
+        }
+
+        @media (max-width: 995px) and (min-width: 768px) {
+            .menuItem {
+                height: 20em;
+            }
+        }
+
+        .beverageDiv {
+            max-width: 50%;
+            width: 30%;
+            min-width: 25em;
+            margin: 0 auto;
         }
 
         table {
             width: 100%;
             margin: 0 auto;
-            margin-top: 2em;
             text-align: center;
         }
 
         caption {
             text-align: center;
+            color: black;
         }
 
         .alignLeft {
@@ -59,14 +63,19 @@
     <div id='title'>
         <h1>The Wizard's Castle</h1>
     </div>
-    <div id='navigation'>
-        <a href='index.html'>Home</a>
-        <a href='menu.html'>Menu</a>
-        <a href='contact.html'>Contact Us</a>
+    <div id='navContainer'>
+        <ul class='nav nav-pills'>
+            <li><a href='index.html'><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class='active'><a href='menu.html'>Menu</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
+        </ul>
+        <div class="jumbotron">
+            <h1>We're opening a new location!</h1>
+        </div>
     </div>
-    <div id='menuBody'>
-        <div class='menuDiv'>
-            <div class='menuItem'>
+    <div class='container-fluid' id='menuBody'>
+        <div class='row menuDiv'>
+            <div class='col-sm-6 col-md-4 menuItem'>
                 <h3>Dragon Burger and Claws</h3>
                 An Adventure Classic!
                 <br /> Your choice - with or without cheese pickles, onions, tomato, lettuce, BBQ sauce
@@ -74,7 +83,7 @@
                 <br />Wash it down with our homebrewed fireball mead for $2.00 more
                 <br />$12.00
             </div>
-            <div class='menuItem'>
+            <div class='col-sm-6 col-md-4 menuItem'>
                 <h3>Wyvern Dog and Scales</h3>
                 A Tasty Treat!
                 <br />Your choice - white or wheat bun
@@ -83,7 +92,7 @@
                 <br />Wash it down with our homebrewed fireball mead for $2.00 more
                 <br />$12.00
             </div>
-            <div class='menuItem'>
+            <div class='col-sm-6 col-md-4 menuItem'>
                 <h3>Garden Salad</h3>
                 Refreshing!
                 <br /> A mix of Iceberg and Romaine Lettuce, Spinach, Brocolli, Carrots, Celery, Kale, and Cherry Tomatos straight
@@ -93,9 +102,7 @@
                 <br />Servered with a freshly-baked bread roll
                 <br />$10.00
             </div>
-        </div>
-        <div class='menuDiv'>
-            <div class='menuItem'>
+            <div class='col-sm-6 col-md-4 menuItem'>
                 <h3>Basket of Bread Staves</h3>
                 A whole staff of bread!
                 <br />Fresh baked daily with the aid of magic
@@ -103,7 +110,7 @@
                 <br />Get meat dipping sauce for $1.00
                 <br />$6.00
             </div>
-            <div class='menuItem'>
+            <div class='col-sm-6 col-md-4 menuItem'>
                 <h3>Wizard Hat Porridge</h3>
                 Eat Like a Wizard!
                 <br />Your choice - Apple Cinnimon, Blueberry, or Plain Oatmeal or Malt'o'Meal served in a bowl that looks like
@@ -111,7 +118,7 @@
                 <br /> Comes with our magic colour changing orange juice, milk, or coffee
                 <br /> $8.00
             </div>
-            <div class='menuItem'>
+            <div class='col-sm-6 col-md-4 menuItem'>
                 <h3>Spellbook Pie</h3>
                 Delecious Pages in Every Bite!
                 <br /> Your choice - Redberry, Meat, Fish, Wild, or Summer pie.
@@ -119,32 +126,28 @@
                 <br /> $9.00
             </div>
         </div>
-        <div class='menuDiv'>
-            <div class='menuItem'></div>
-            <div class='menuItem'>
-                <table>
-                    <caption>
-                        <h3>Beverages</h3>
-                    </caption>
-                    <tr>
-                        <td class='alignLeft'>Wizard's Fizzy Root Beer</td>
-                        <td class='alignRight'>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td class='alignLeft'>Bottled Mana Water</td>
-                        <td class='alignRight'>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td class='alignLeft'>Mountain Fresh Lemonade</td>
-                        <td class='alignRight'>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td class='alignLeft'>Frost Dragon Ice Tea</td>
-                        <td class='alignRight'>$1.25</td>
-                    </tr>
-                </table>
-            </div>
-            <div class='menuItem'></div>
+        <div class='row beverageDiv'>
+            <table>
+                <caption>
+                    <h3>Beverages</h3>
+                </caption>
+                <tr>
+                    <td class='alignLeft'>Wizard's Fizzy Root Beer</td>
+                    <td class='alignRight'>$3.00</td>
+                </tr>
+                <tr>
+                    <td class='alignLeft'>Bottled Mana Water</td>
+                    <td class='alignRight'>$1.25</td>
+                </tr>
+                <tr>
+                    <td class='alignLeft'>Mountain Fresh Lemonade</td>
+                    <td class='alignRight'>$1.00</td>
+                </tr>
+                <tr>
+                    <td class='alignLeft'>Frost Dragon Ice Tea</td>
+                    <td class='alignRight'>$1.25</td>
+                </tr>
+            </table>
         </div>
     </div>
     <footer>
